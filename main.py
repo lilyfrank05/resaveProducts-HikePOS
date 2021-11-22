@@ -73,7 +73,7 @@ wb = load_workbook(filePath)
 ws = wb.active
 column = ws['A']
 skuList = [column[x].value for x in range(len(column))]
-
+#resave the products
 for sku in skuList:
     resave_product(sku)
     print(sku)
